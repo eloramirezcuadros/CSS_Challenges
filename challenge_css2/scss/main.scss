@@ -1,0 +1,35 @@
+ @mixin variables ($color, $height1, $width1, $left1, $top1, $index) {
+     background: $color;
+     display: flex;
+     height: $height1;
+     margin-left: $left1;
+     margin-top: $top1;
+     position: absolute;
+     width: $width1;
+     z-index: $index;
+ }
+ 
+ .ellipse1 {
+     border: 50px solid #6592CF;
+     border-top-left-radius: 150px;
+     border-top-right-radius: 150px;
+     border-bottom-left-radius: 150px;
+     border-bottom-right-radius: 150px;
+     box-sizing: border-box;
+     @include variables (none, 250px, 250px, 75px, 25px, 1);
+ }
+ 
+ .ellipse2 {
+     border-radius: 50px;
+     @include variables(#EEB850, 50px, 50px, 175px, 125px, 1);
+ }
+ 
+ .rectangle1 {
+     @include variables(#6592CF, 300px, 400px, 0, 0, -1);
+ }
+ 
+ .rectangle2 {
+     box-shadow: 0px 4px 4px 0px #00000040;
+     @include variables(#243D83, 150px, 300px, 50px, 75px, -1);
+ }
+ 

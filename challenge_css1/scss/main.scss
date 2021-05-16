@@ -1,8 +1,8 @@
-@mixin ssquare ($color, $width1, $height1, $margin_top, $margin_left) {
+@mixin ssquare ($color, $width1, $height1, $top1, $left1) {
     background: $color;
     height: $height1;
-    margin-left: $margin_left;
-    margin-top: $margin_top;
+    margin-left: $left1;
+    margin-top: $top1;
     position: absolute;
     width: $width1;
 }
@@ -11,18 +11,18 @@
     @include ssquare (#62374E, 400px, 300px, 0, 0);
 }
 
-#square1 {
+.square1 {
     @include ssquare (#FDC57B, 50px, 50px, 50px, 50px);
 }
 
-#square2 {
+.square2 {
     @include ssquare (#FDC57B, 50px, 50px, 50px, 300px);
 }
 
-#square3 {
+.square3 {
     @include ssquare (#FDC57B, 50px, 50px, 200px, 50px);
 }
 
-#square4 {
+.square4 {
     @include ssquare (#FDC57B, 50px, 50px, 200px, 300px);
 }
